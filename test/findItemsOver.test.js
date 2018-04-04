@@ -1,12 +1,14 @@
 describe('findItemsOver', function(){
 
-    it('should return the items over the threshold ', function(){
+    it('should return the products which is over then the threshold ', function(){
+var threshold= 30;
       var Items=[{"name":"pears","qty":37},{"name":"bananas","qty":27}];
 
         assert.equal(findItemsOver(Items),0);
 
       });
-          it('should return products that have quantity higher than the threshold.', function(){
-              assert.deepEqual([], findItemsOver('apple'));
+          it('should return 2 products that have quantity higher than 25.', function(){
+  var fruits=[{"name":"pears","qty":37},{"name":"bananas","qty":27}];
+              assert.deepEqual([], findItemsOver('fruits'));
     });
 });

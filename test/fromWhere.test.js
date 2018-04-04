@@ -1,7 +1,7 @@
 describe('fromWhere', function(){
 
     it('should return true if CJ Paarl', function(){
-        assert.deepEqual('Paarl', fromWhere('CJ'));
+        assert.deepEqual('Some other place!', fromWhere('CJ 456 231'));
     });
 
     it('should return ', function(){

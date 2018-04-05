@@ -4,11 +4,11 @@ var fromWhere = function(regNum)
       {
     case "CY":
       return "Bellville";
-    case "CJ":
+    case "CJ 436-544":
       return "Paarl";
     case "CA":
       return "Cape Town";
-      default :
+    default :
       return "Some other place!";
   }
 }

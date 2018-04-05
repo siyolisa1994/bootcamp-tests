@@ -1,10 +1,10 @@
 describe('fromWhere', function(){
 
     it('should return true if CJ Paarl', function(){
-        assert.deepEqual('Some other place!', fromWhere('CJ 456 231'));
+        assert.equal('Paarl', fromWhere('CJ 436-544'));
     });
 
-    it('should return ', function(){
+    it('should return other places if registration num is not CJ', function(){
         assert.equal('Some other place!', fromWhere('CA 233 143'));
 
     });

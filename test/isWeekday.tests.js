@@ -5,7 +5,7 @@ describe('isWeekday function', function(){
 
       });
 
-      it('must return true if days is from Monday to Friday', function(){
+      it('must return true if days is on Monday to Friday', function(){
           assert.equal(isWeekday('Monday'), true);
 
     });

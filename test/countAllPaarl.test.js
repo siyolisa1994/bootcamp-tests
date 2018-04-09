@@ -5,7 +5,7 @@ describe('The countAllPaarl function', function(){
     });
 
     it('should return false if the registration number is not from Paarl', function(){
-        assert.equal(0, countAllPaarl('CA 653 789','CJ'));
+        assert.equal(0, countAllPaarl('CA 653 789, CY 767 876, CT 897 098','CJ'));
 
     });
 });

@@ -6,7 +6,7 @@ describe('findItemsOver20', function(){
         assert.equal(findItemsOver20(Items),2);
 
       });
-          it('should return the items which are less than 20', function(){
+          it('should return the items which are more than 20', function(){
             var Items=[{"name":"pears","qty":37},
             {"name":"bananas","qty":22},
             {"name":"apple","qty":32}];

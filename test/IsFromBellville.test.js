@@ -1,12 +1,9 @@
-describe('IsFromBellville', function(){
+describe('function isfromBellville ', function(){
 
-  it('check if the registration number is from Bellville', function(){
-      assert.equal(IsFromBellville('CY 434-245'), true);
-});
-
-
-    it('must return false if regNum is not from Bellville', function(){
-        assert.equal(IsFromBellville('CK 543-097'), false);
-
+    it('should  return true if the registration number is for Bellville', function(){
+        assert.equal(isFromBellville('CY 654-234'),true);
     });
+    it('should  return false if the registration number is for Bellville', function(){
+        assert.equal(isFromBellville('CA 333-333'),false);
+   });
 });

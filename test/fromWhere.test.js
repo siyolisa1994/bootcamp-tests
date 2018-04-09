@@ -1,11 +1,12 @@
-describe('fromWhere', function(){
+describe(' fromWhere function', function(){
 
-    it('should return true if CJ Paarl', function(){
-        assert.equal('Paarl', fromWhere('CJ 436-544'));
+    it('should return Bellville if the registration number startsWith CY', function(){
+        assert.equal(fromWhere('CY'),'Bellville');
+          });
+    it('should return Paarl if registration number start with CJ', function(){
+        assert.equal(fromWhere('CJ'),'Paarl');
     });
-
-    it('should return other places if registration num is not CJ', function(){
-        assert.equal('Some other place!', fromWhere('CA 233 143'));
-
+    it(' should return Cape Town if registration number start with CA ', function(){
+        assert.equal(fromWhere('CA'),'Cape Town');
     });
 });

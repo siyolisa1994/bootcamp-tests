@@ -1,10 +1,11 @@
-describe('regCheck function', function(){
-    it('should return true if regNum startsWith CA CY CJ', function(){
-        assert.equal(regCheck('CY 233-442') true);
-    });
-    it('should check the registration number', function(){
-        assert.equal(false,regCheck('DV 23 LP GP', 'MP'));
+describe('function regCheck ', function(){
 
-
+    it('check if a registration number is for GP, L, EC, MP ', function(){
+        assert.equal(regCheck('DV 23 LP GP', 'MP'), false );
     });
+
+    it('check if a registration number is for CA, L, EC,', function(){
+        assert.equal(regCheck('CA 23 LP GP', 'MP'), false );
+    });
+
 });

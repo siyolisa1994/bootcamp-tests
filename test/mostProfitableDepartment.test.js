@@ -20,7 +20,7 @@ describe('mostProfitableDepartment function', function(){
         assert.deepEqual(mostProfitableDepartment(salesData),'outdoor' );
       });
         it(' determine which day of the week is the most profitable', function(){
-              assert.equal(mostProfitableDepartment(salesData),'outdoor' );
+              assert.notDeepEqual(mostProfitableDepartment('Thursday'),'outdoor' );
 
 });
 
